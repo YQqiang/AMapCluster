@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F0A783A2113055A00F082B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A78392113055A00F082B6 /* AppDelegate.m */; };
+		2F0A783D2113055A00F082B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A783C2113055A00F082B6 /* ViewController.m */; };
+		2F0A78402113055A00F082B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0A783E2113055A00F082B6 /* Main.storyboard */; };
+		2F0A78422113055C00F082B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F0A78412113055C00F082B6 /* Assets.xcassets */; };
+		2F0A78452113055C00F082B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0A78432113055C00F082B6 /* LaunchScreen.storyboard */; };
+		2F0A78482113055C00F082B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A78472113055C00F082B6 /* main.m */; };
+		2F0A78522113055C00F082B6 /* AMapClusterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A78512113055C00F082B6 /* AMapClusterTests.m */; };
+		2F0A785D2113055C00F082B6 /* AMapClusterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A785C2113055C00F082B6 /* AMapClusterUITests.m */; };
+		2F0A7885211307A800F082B6 /* ClusterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A786E211307A800F082B6 /* ClusterAnnotation.m */; };
+		2F0A7886211307A800F082B6 /* CoordinateQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A786F211307A800F082B6 /* CoordinateQuadTree.m */; };
+		2F0A7887211307A800F082B6 /* QuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A7870211307A800F082B6 /* QuadTree.m */; };
+		2F0A7889211307A800F082B6 /* ClusterAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A7874211307A800F082B6 /* ClusterAnnotationView.m */; };
+		2F0A789421130A7900F082B6 /* BaseClusterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A789221130A7800F082B6 /* BaseClusterViewController.m */; };
+		2F0A789721130B0600F082B6 /* BaseMAMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A789621130B0500F082B6 /* BaseMAMapView.m */; };
+		2F0A789A2113D97800F082B6 /* PointModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A78992113D97800F082B6 /* PointModel.m */; };
+		2F0A789C2113DAF800F082B6 /* PointSampleDatas.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F0A789B2113DAF800F082B6 /* PointSampleDatas.json */; };
+		85134C0A57FC9B3EF9ADF709 /* libPods-AMapClusterUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9D843588DDD678A98F1CE9 /* libPods-AMapClusterUITests.a */; };
+		9FDB2E99EC35FE2E5F9B434F /* libPods-AMapCluster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2155805435F715CC32288BB /* libPods-AMapCluster.a */; };
+		ADC1BC43AB81D65DB1CF0F4F /* libPods-AMapClusterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9580453C4E35011919C24EAC /* libPods-AMapClusterTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F0A784E2113055C00F082B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F0A782D2113055A00F082B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F0A78342113055A00F082B6;
+			remoteInfo = AMapCluster;
+		};
+		2F0A78592113055C00F082B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F0A782D2113055A00F082B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F0A78342113055A00F082B6;
+			remoteInfo = AMapCluster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F0A78352113055A00F082B6 /* AMapCluster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMapCluster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F0A78382113055A00F082B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F0A78392113055A00F082B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F0A783B2113055A00F082B6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2F0A783C2113055A00F082B6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2F0A783F2113055A00F082B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F0A78412113055C00F082B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F0A78442113055C00F082B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F0A78462113055C00F082B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F0A78472113055C00F082B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F0A784D2113055C00F082B6 /* AMapClusterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMapClusterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F0A78512113055C00F082B6 /* AMapClusterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMapClusterTests.m; sourceTree = "<group>"; };
+		2F0A78532113055C00F082B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F0A78582113055C00F082B6 /* AMapClusterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMapClusterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F0A785C2113055C00F082B6 /* AMapClusterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMapClusterUITests.m; sourceTree = "<group>"; };
+		2F0A785E2113055C00F082B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F0A786E211307A800F082B6 /* ClusterAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterAnnotation.m; sourceTree = "<group>"; };
+		2F0A786F211307A800F082B6 /* CoordinateQuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinateQuadTree.m; sourceTree = "<group>"; };
+		2F0A7870211307A800F082B6 /* QuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuadTree.m; sourceTree = "<group>"; };
+		2F0A7874211307A800F082B6 /* ClusterAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterAnnotationView.m; sourceTree = "<group>"; };
+		2F0A7876211307A800F082B6 /* ClusterAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterAnnotation.h; sourceTree = "<group>"; };
+		2F0A7877211307A800F082B6 /* CoordinateQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinateQuadTree.h; sourceTree = "<group>"; };
+		2F0A787A211307A800F082B6 /* QuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadTree.h; sourceTree = "<group>"; };
+		2F0A787C211307A800F082B6 /* ClusterAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterAnnotationView.h; sourceTree = "<group>"; };
+		2F0A789221130A7800F082B6 /* BaseClusterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseClusterViewController.m; sourceTree = "<group>"; };
+		2F0A789321130A7900F082B6 /* BaseClusterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseClusterViewController.h; sourceTree = "<group>"; };
+		2F0A789521130B0500F082B6 /* BaseMAMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMAMapView.h; sourceTree = "<group>"; };
+		2F0A789621130B0500F082B6 /* BaseMAMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMAMapView.m; sourceTree = "<group>"; };
+		2F0A78982113D97800F082B6 /* PointModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointModel.h; sourceTree = "<group>"; };
+		2F0A78992113D97800F082B6 /* PointModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointModel.m; sourceTree = "<group>"; };
+		2F0A789B2113DAF800F082B6 /* PointSampleDatas.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = PointSampleDatas.json; sourceTree = "<group>"; };
+		59E93D95F1C4B5D03CF9F1CD /* Pods-AMapCluster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMapCluster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMapCluster/Pods-AMapCluster.debug.xcconfig"; sourceTree = "<group>"; };
+		66BB8EC8050AD75A884E02AF /* Pods-AMapClusterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMapClusterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMapClusterUITests/Pods-AMapClusterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9580453C4E35011919C24EAC /* libPods-AMapClusterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMapClusterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2155805435F715CC32288BB /* libPods-AMapCluster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMapCluster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE844F19C77BBB702359C11D /* Pods-AMapCluster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMapCluster.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMapCluster/Pods-AMapCluster.release.xcconfig"; sourceTree = "<group>"; };
+		DE871DF3CB9209D5D9FDCC40 /* Pods-AMapClusterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMapClusterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMapClusterUITests/Pods-AMapClusterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DF9D843588DDD678A98F1CE9 /* libPods-AMapClusterUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMapClusterUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F19C53B20DBD6562614BA4D9 /* Pods-AMapClusterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMapClusterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMapClusterTests/Pods-AMapClusterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F35261EB066635A175ADD60A /* Pods-AMapClusterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMapClusterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMapClusterTests/Pods-AMapClusterTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F0A78322113055A00F082B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FDB2E99EC35FE2E5F9B434F /* libPods-AMapCluster.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F0A784A2113055C00F082B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADC1BC43AB81D65DB1CF0F4F /* libPods-AMapClusterTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F0A78552113055C00F082B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85134C0A57FC9B3EF9ADF709 /* libPods-AMapClusterUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F0A782C2113055A00F082B6 = {
+			isa = PBXGroup;
+			children = (
+				2F0A786A211307A800F082B6 /* clusterMap */,
+				2F0A78372113055A00F082B6 /* AMapCluster */,
+				2F0A78502113055C00F082B6 /* AMapClusterTests */,
+				2F0A785B2113055C00F082B6 /* AMapClusterUITests */,
+				2F0A78362113055A00F082B6 /* Products */,
+				B6900F4E9CA689A42EFB3F25 /* Pods */,
+				4CE4807BFF2AB99B0ED4AF01 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2F0A78362113055A00F082B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F0A78352113055A00F082B6 /* AMapCluster.app */,
+				2F0A784D2113055C00F082B6 /* AMapClusterTests.xctest */,
+				2F0A78582113055C00F082B6 /* AMapClusterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F0A78372113055A00F082B6 /* AMapCluster */ = {
+			isa = PBXGroup;
+			children = (
+				2F0A78382113055A00F082B6 /* AppDelegate.h */,
+				2F0A78392113055A00F082B6 /* AppDelegate.m */,
+				2F0A783B2113055A00F082B6 /* ViewController.h */,
+				2F0A783C2113055A00F082B6 /* ViewController.m */,
+				2F0A78982113D97800F082B6 /* PointModel.h */,
+				2F0A78992113D97800F082B6 /* PointModel.m */,
+				2F0A783E2113055A00F082B6 /* Main.storyboard */,
+				2F0A78412113055C00F082B6 /* Assets.xcassets */,
+				2F0A78432113055C00F082B6 /* LaunchScreen.storyboard */,
+				2F0A78462113055C00F082B6 /* Info.plist */,
+				2F0A78472113055C00F082B6 /* main.m */,
+				2F0A789B2113DAF800F082B6 /* PointSampleDatas.json */,
+			);
+			path = AMapCluster;
+			sourceTree = "<group>";
+		};
+		2F0A78502113055C00F082B6 /* AMapClusterTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F0A78512113055C00F082B6 /* AMapClusterTests.m */,
+				2F0A78532113055C00F082B6 /* Info.plist */,
+			);
+			path = AMapClusterTests;
+			sourceTree = "<group>";
+		};
+		2F0A785B2113055C00F082B6 /* AMapClusterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2F0A785C2113055C00F082B6 /* AMapClusterUITests.m */,
+				2F0A785E2113055C00F082B6 /* Info.plist */,
+			);
+			path = AMapClusterUITests;
+			sourceTree = "<group>";
+		};
+		2F0A786A211307A800F082B6 /* clusterMap */ = {
+			isa = PBXGroup;
+			children = (
+				2F0A789321130A7900F082B6 /* BaseClusterViewController.h */,
+				2F0A789221130A7800F082B6 /* BaseClusterViewController.m */,
+				2F0A789521130B0500F082B6 /* BaseMAMapView.h */,
+				2F0A789621130B0500F082B6 /* BaseMAMapView.m */,
+				2F0A786C211307A800F082B6 /* clusterMap */,
+			);
+			name = clusterMap;
+			path = AMapCluster/clusterMap;
+			sourceTree = "<group>";
+		};
+		2F0A786C211307A800F082B6 /* clusterMap */ = {
+			isa = PBXGroup;
+			children = (
+				2F0A786D211307A800F082B6 /* Classes */,
+			);
+			path = clusterMap;
+			sourceTree = "<group>";
+		};
+		2F0A786D211307A800F082B6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2F0A786E211307A800F082B6 /* ClusterAnnotation.m */,
+				2F0A786F211307A800F082B6 /* CoordinateQuadTree.m */,
+				2F0A7870211307A800F082B6 /* QuadTree.m */,
+				2F0A7874211307A800F082B6 /* ClusterAnnotationView.m */,
+				2F0A7876211307A800F082B6 /* ClusterAnnotation.h */,
+				2F0A7877211307A800F082B6 /* CoordinateQuadTree.h */,
+				2F0A787A211307A800F082B6 /* QuadTree.h */,
+				2F0A787C211307A800F082B6 /* ClusterAnnotationView.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4CE4807BFF2AB99B0ED4AF01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2155805435F715CC32288BB /* libPods-AMapCluster.a */,
+				9580453C4E35011919C24EAC /* libPods-AMapClusterTests.a */,
+				DF9D843588DDD678A98F1CE9 /* libPods-AMapClusterUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6900F4E9CA689A42EFB3F25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59E93D95F1C4B5D03CF9F1CD /* Pods-AMapCluster.debug.xcconfig */,
+				CE844F19C77BBB702359C11D /* Pods-AMapCluster.release.xcconfig */,
+				F19C53B20DBD6562614BA4D9 /* Pods-AMapClusterTests.debug.xcconfig */,
+				F35261EB066635A175ADD60A /* Pods-AMapClusterTests.release.xcconfig */,
+				66BB8EC8050AD75A884E02AF /* Pods-AMapClusterUITests.debug.xcconfig */,
+				DE871DF3CB9209D5D9FDCC40 /* Pods-AMapClusterUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F0A78342113055A00F082B6 /* AMapCluster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F0A78612113055C00F082B6 /* Build configuration list for PBXNativeTarget "AMapCluster" */;
+			buildPhases = (
+				D7D43C4612A6342F0100D332 /* [CP] Check Pods Manifest.lock */,
+				2F0A78312113055A00F082B6 /* Sources */,
+				2F0A78322113055A00F082B6 /* Frameworks */,
+				2F0A78332113055A00F082B6 /* Resources */,
+				B7C1B9DCA5CD11CF8EE1B7DE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AMapCluster;
+			productName = AMapCluster;
+			productReference = 2F0A78352113055A00F082B6 /* AMapCluster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F0A784C2113055C00F082B6 /* AMapClusterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F0A78642113055C00F082B6 /* Build configuration list for PBXNativeTarget "AMapClusterTests" */;
+			buildPhases = (
+				B8757D88D61274595F3B6253 /* [CP] Check Pods Manifest.lock */,
+				2F0A78492113055C00F082B6 /* Sources */,
+				2F0A784A2113055C00F082B6 /* Frameworks */,
+				2F0A784B2113055C00F082B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F0A784F2113055C00F082B6 /* PBXTargetDependency */,
+			);
+			name = AMapClusterTests;
+			productName = AMapClusterTests;
+			productReference = 2F0A784D2113055C00F082B6 /* AMapClusterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2F0A78572113055C00F082B6 /* AMapClusterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F0A78672113055C00F082B6 /* Build configuration list for PBXNativeTarget "AMapClusterUITests" */;
+			buildPhases = (
+				0F956D14520141536E154DDB /* [CP] Check Pods Manifest.lock */,
+				2F0A78542113055C00F082B6 /* Sources */,
+				2F0A78552113055C00F082B6 /* Frameworks */,
+				2F0A78562113055C00F082B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F0A785A2113055C00F082B6 /* PBXTargetDependency */,
+			);
+			name = AMapClusterUITests;
+			productName = AMapClusterUITests;
+			productReference = 2F0A78582113055C00F082B6 /* AMapClusterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F0A782D2113055A00F082B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = sungrow;
+				TargetAttributes = {
+					2F0A78342113055A00F082B6 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					2F0A784C2113055C00F082B6 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 2F0A78342113055A00F082B6;
+					};
+					2F0A78572113055C00F082B6 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 2F0A78342113055A00F082B6;
+					};
+				};
+			};
+			buildConfigurationList = 2F0A78302113055A00F082B6 /* Build configuration list for PBXProject "AMapCluster" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F0A782C2113055A00F082B6;
+			productRefGroup = 2F0A78362113055A00F082B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F0A78342113055A00F082B6 /* AMapCluster */,
+				2F0A784C2113055C00F082B6 /* AMapClusterTests */,
+				2F0A78572113055C00F082B6 /* AMapClusterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F0A78332113055A00F082B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F0A78452113055C00F082B6 /* LaunchScreen.storyboard in Resources */,
+				2F0A789C2113DAF800F082B6 /* PointSampleDatas.json in Resources */,
+				2F0A78422113055C00F082B6 /* Assets.xcassets in Resources */,
+				2F0A78402113055A00F082B6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F0A784B2113055C00F082B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F0A78562113055C00F082B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F956D14520141536E154DDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AMapClusterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7C1B9DCA5CD11CF8EE1B7DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AMapCluster/Pods-AMapCluster-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMapCluster/Pods-AMapCluster-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8757D88D61274595F3B6253 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AMapClusterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7D43C4612A6342F0100D332 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AMapCluster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F0A78312113055A00F082B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F0A7887211307A800F082B6 /* QuadTree.m in Sources */,
+				2F0A783D2113055A00F082B6 /* ViewController.m in Sources */,
+				2F0A789421130A7900F082B6 /* BaseClusterViewController.m in Sources */,
+				2F0A7889211307A800F082B6 /* ClusterAnnotationView.m in Sources */,
+				2F0A78482113055C00F082B6 /* main.m in Sources */,
+				2F0A789721130B0600F082B6 /* BaseMAMapView.m in Sources */,
+				2F0A789A2113D97800F082B6 /* PointModel.m in Sources */,
+				2F0A783A2113055A00F082B6 /* AppDelegate.m in Sources */,
+				2F0A7885211307A800F082B6 /* ClusterAnnotation.m in Sources */,
+				2F0A7886211307A800F082B6 /* CoordinateQuadTree.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F0A78492113055C00F082B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F0A78522113055C00F082B6 /* AMapClusterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F0A78542113055C00F082B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F0A785D2113055C00F082B6 /* AMapClusterUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F0A784F2113055C00F082B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F0A78342113055A00F082B6 /* AMapCluster */;
+			targetProxy = 2F0A784E2113055C00F082B6 /* PBXContainerItemProxy */;
+		};
+		2F0A785A2113055C00F082B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F0A78342113055A00F082B6 /* AMapCluster */;
+			targetProxy = 2F0A78592113055C00F082B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F0A783E2113055A00F082B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F0A783F2113055A00F082B6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F0A78432113055C00F082B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F0A78442113055C00F082B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F0A785F2113055C00F082B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2F0A78602113055C00F082B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F0A78622113055C00F082B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59E93D95F1C4B5D03CF9F1CD /* Pods-AMapCluster.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AMapCluster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.AMapCluster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F0A78632113055C00F082B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE844F19C77BBB702359C11D /* Pods-AMapCluster.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AMapCluster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.AMapCluster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2F0A78652113055C00F082B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F19C53B20DBD6562614BA4D9 /* Pods-AMapClusterTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AMapClusterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.AMapClusterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMapCluster.app/AMapCluster";
+			};
+			name = Debug;
+		};
+		2F0A78662113055C00F082B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F35261EB066635A175ADD60A /* Pods-AMapClusterTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AMapClusterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.AMapClusterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMapCluster.app/AMapCluster";
+			};
+			name = Release;
+		};
+		2F0A78682113055C00F082B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66BB8EC8050AD75A884E02AF /* Pods-AMapClusterUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AMapClusterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.AMapClusterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AMapCluster;
+			};
+			name = Debug;
+		};
+		2F0A78692113055C00F082B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE871DF3CB9209D5D9FDCC40 /* Pods-AMapClusterUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AMapClusterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.AMapClusterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AMapCluster;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F0A78302113055A00F082B6 /* Build configuration list for PBXProject "AMapCluster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F0A785F2113055C00F082B6 /* Debug */,
+				2F0A78602113055C00F082B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F0A78612113055C00F082B6 /* Build configuration list for PBXNativeTarget "AMapCluster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F0A78622113055C00F082B6 /* Debug */,
+				2F0A78632113055C00F082B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F0A78642113055C00F082B6 /* Build configuration list for PBXNativeTarget "AMapClusterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F0A78652113055C00F082B6 /* Debug */,
+				2F0A78662113055C00F082B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F0A78672113055C00F082B6 /* Build configuration list for PBXNativeTarget "AMapClusterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F0A78682113055C00F082B6 /* Debug */,
+				2F0A78692113055C00F082B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F0A782D2113055A00F082B6 /* Project object */;
+}

@@ -1,0 +1,20 @@
+PODS:
+  - AMap3DMap (6.2.0):
+    - AMapFoundation (~> 1.5)
+  - AMapFoundation (1.5.2)
+
+DEPENDENCIES:
+  - AMap3DMap
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AMap3DMap
+    - AMapFoundation
+
+SPEC CHECKSUMS:
+  AMap3DMap: 4170b8e1674883eefc068e277abf4dbaa9ea5f2d
+  AMapFoundation: 46b194013a3b06e0e82e8963108ceb972d4200b8
+
+PODFILE CHECKSUM: f77f8290e7914e5b3806f21eeb6e46ea464432c1
+
+COCOAPODS: 1.5.3
