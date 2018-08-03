@@ -50,6 +50,7 @@
         ClusterAnnotation *clusterAnno = (ClusterAnnotation *)annotation;
         NSInteger clusterCount = clusterAnno.count;
         [annotationView.btn setBackgroundImage:[UIImage imageNamed:@"单车2"] forState:UIControlStateNormal];
+        [annotationView.btn setBackgroundImage:[UIImage imageNamed:@"单车_红"] forState:UIControlStateSelected];
         [annotationView.btn sizeToFit];
         annotationView.btn.center = annotationView.btn.superview.center;
         [annotationView.btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
